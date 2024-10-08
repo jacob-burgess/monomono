@@ -16,9 +16,9 @@
 		"noImplicitOverride": true, // Makes the override keyword actually useful in classes.
 
 		/* If transpiling with TypeScript: */
-		"module": "NodeNext", // Tells TypeScript what module syntax to use. NodeNext is the best option for Node.
-		"outDir": "dist", // Tells TypeScript where to put the compiled JavaScript files. dist is my preferred convention, but it's up to you.
-		"sourceMap": true, // Tells TypeScript to emit source maps. This is needed so that when consumers of your libraries are debugging, they can jump to the original source code using go-to-definition.
+		// "module": "NodeNext", // Tells TypeScript what module syntax to use. NodeNext is the best option for Node.
+		// "outDir": "dist", // Tells TypeScript where to put the compiled JavaScript files. dist is my preferred convention, but it's up to you.
+		// "sourceMap": true, // Tells TypeScript to emit source maps. This is needed so that when consumers of your libraries are debugging, they can jump to the original source code using go-to-definition.
 
 		/* AND if you're building for a library: */
 		"declaration": true, // Tells TypeScript to emit .d.ts files. This is needed so that libraries can get autocomplete on the .js files you're creating.
@@ -28,8 +28,8 @@
 		"declarationMap": true, // Tells TypeScript to emit declaration maps. This is needed so that when consumers of your libraries are debugging, they can jump to the original source code using go-to-definition.
 
 		/* If NOT transpiling with TypeScript: */
-		// "module": "preserve", // preserve is the best option because it most closely mimics how bundlers treat modules.
-		// "noEmit": true, // Tells TypeScript not to emit any files. This is important when you're using a bundler so you don't emit useless .js files.
+		"module": "preserve", // preserve is the best option because it most closely mimics how bundlers treat modules.
+		"noEmit": true, // Tells TypeScript not to emit any files. This is important when you're using a bundler so you don't emit useless .js files.
 
 		/* If your code runs in the DOM: */
 		"lib": ["es2022", "dom", "dom.iterable"] // Tells TypeScript what built-in types to include. es2022 is the best option for stability. dom and dom.iterable give you types for window, document etc.
