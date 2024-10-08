@@ -1,0 +1,12 @@
+{
+	"name": "@boogie/ui",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"sideEffects": false,
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.3",
+		"@types/bun": "latest"
+	}
+}
