@@ -1,10 +1,11 @@
 {
-	"extends": "../../tsconfig.json",
+	"extends": "@boogie/tsconfig/react-library.json",
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
-			"~/*": ["src/*"]
-		},
-		"jsx": "react-jsx"
-	}
+			"@repo/ui/*": ["./src/*"]
+		}
+	},
+	"include": ["src"],
+	"exclude": ["build", "dist", "node_modules"]
 }

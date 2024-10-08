@@ -17,5 +17,5 @@
 		"build": "bun run --cwd packages/package-a build && bun run --cwd packages/package-b build"
 	},
 	"type": "module",
-	"workspaces": ["apps/*", "packages/*"]
+	"workspaces": ["apps/*", "packages/*", "tooling/*"]
 }
