@@ -13,9 +13,9 @@
 	"scripts": {
 		"check": "biome check --apply .",
 		"build": "bun run --cwd packages/package-a build && bun run --cwd packages/package-b build",
-		"lint": "bun run lint",
+		"lint": "bun --filter '*' lint",
 		"lint:self": "biome lint",
-		"format": "bun run format",
+		"format": "bun --filter '*' format",
 		"format:self": "biome format --config-path=biome.root.jsonc"
 	},
 	"type": "module",

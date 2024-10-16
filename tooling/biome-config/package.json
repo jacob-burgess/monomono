@@ -6,10 +6,6 @@
 	"exports": {
 		"./biome": "./biome.jsonc"
 	},
-	"scripts": {
-		"format": "biome format",
-		"lint": "biome lint"
-	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.3"
 	}
