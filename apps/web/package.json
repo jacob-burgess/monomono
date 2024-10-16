@@ -8,8 +8,8 @@
 		"dev": "vinxi dev",
 		"build": "vinxi build",
 		"start": "vinxi start",
-		"lint": "biome lint",
-		"format": "biome format"
+		"lint": "biome lint --config-path=./biome.jsonc",
+		"format": "biome format . --config-path=./biome.jsonc --write"
 	},
 	"dependencies": {
 		"@boogie/biome-config": "workspace:*",

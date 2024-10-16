@@ -10,6 +10,7 @@
 
 			/* apps/web */
 			"apps/web/dist",
+			"apps/web/app/routeTree.gen.ts",
 
 			/* packages/ui */
 			"packages/ui/dist"
