@@ -1,0 +1,18 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+	// We prepend "./node_modules" because Biome doesn't resolve pnpm's symlinks
+	"extends": ["@boogie/biome-config/biome.jsonc"],
+	"files": {
+		// Duplicate all the ignore rules from nested Biome configs.
+		"ignore": [
+			/* Root */
+			"bun.lockb",
+
+			/* apps/web */
+			"apps/web/dist",
+
+			/* packages/ui */
+			"packages/ui/dist"
+		]
+	}
+}

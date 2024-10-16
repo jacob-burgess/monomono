@@ -1,0 +1,16 @@
+{
+	"name": "@boogie/biome-config",
+	"type": "module",
+	"version": "0.0.0",
+	"description": "Monorepo-wide Biome configuration",
+	"exports": {
+		"./biome": "./biome.jsonc"
+	},
+	"scripts": {
+		"format": "biome format",
+		"lint": "biome lint"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.3"
+	}
+}

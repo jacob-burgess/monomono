@@ -1,0 +1,25 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+	"organizeImports": {
+		"enabled": true
+	},
+	"json": {
+		"parser": {
+			// Supports files like tsconfig.json and .vscode/settings.json that
+			// support comments, despite their file extension.
+			"allowComments": true
+		}
+	},
+	// Ignore files matched by .gitignore.
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	}
+}
